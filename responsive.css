@@ -1,0 +1,55 @@
+/* ============================================================
+   PARA TI — Responsive
+   ------------------------------------------------------------
+   Ajustes por tamaño de pantalla. El sitio está pensado
+   "mobile-first" en su estructura, así que aquí sobre todo
+   afinamos la línea de tiempo, la grilla y el reproductor.
+   ============================================================ */
+
+/* ---------- Tablets ---------- */
+@media (max-width: 900px){
+  :root{ --section-padding: clamp(3.2rem, 9vw, 5rem); }
+
+  .timeline-item .timeline-card{ width: calc(50% - 2rem); }
+}
+
+/* ---------- Móviles ---------- */
+@media (max-width: 640px){
+  .hero-names{ font-size: clamp(2.6rem, 14vw, 4rem); }
+
+  /* La línea de tiempo pasa a una sola columna con la línea a la izquierda */
+  .timeline::before{ left: 20px; }
+  .timeline-item, .timeline-item.left, .timeline-item.right{
+    justify-content: flex-start;
+  }
+  .timeline-item .timeline-card,
+  .timeline-item.left .timeline-card,
+  .timeline-item.right .timeline-card{
+    width: 100%;
+    margin-left: 2.6rem;
+    margin-right: 0;
+    text-align: left;
+  }
+  .timeline-dot{ left: 20px; }
+
+  .counter-grid{ grid-template-columns: repeat(3, 1fr); }
+  .counter-unit{ padding: 1rem 0.4rem; }
+
+  #music-player{
+    max-width: 82vw;
+    padding: 0.6rem 0.8rem;
+  }
+  #music-player .music-info{ max-width: 90px; }
+
+  #scroll-top-btn{ width: 40px; height: 40px; font-size: 1.05rem; }
+
+  .letter-paper{ padding: 1.6rem; max-height: 86vh; }
+
+  .section{ padding-left: 1.1rem; padding-right: 1.1rem; }
+}
+
+/* ---------- Pantallas muy pequeñas ---------- */
+@media (max-width: 380px){
+  .counter-grid{ grid-template-columns: repeat(2, 1fr); }
+  .welcome-content .welcome-script{ font-size: 2.1rem; }
+}

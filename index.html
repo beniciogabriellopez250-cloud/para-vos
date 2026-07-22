@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti 💗</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2226%22 font-size=%2226%22>💗</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="no-scroll">
+
+  <!-- Fondos animados: viven detrás de todo el contenido -->
+  <div id="hearts-rain" aria-hidden="true"></div>
+  <div id="sparkles-layer" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       PANTALLA DE BIENVENIDA
+       ============================================================ -->
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <span class="heart-icon heartbeat">💗</span>
+      <p class="welcome-script">Para ti</p>
+      <h1 id="welcome-title">Antes de entrar...</h1>
+      <p id="welcome-message">Preparé este pequeño rincón con todo lo que siento por ti.</p>
+      <button id="enter-btn" class="btn">Entrar</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CONTENIDO PRINCIPAL
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ENCABEZADO -->
+    <header id="hero">
+      <h1 id="hero-names" class="hero-names fade-in-up"></h1>
+      <p id="hero-phrase" class="hero-subtitle fade-in-up"></p>
+      <p id="hero-date" class="hero-date fade-in-up"></p>
+      <span class="hero-scroll-cue float-soft">⌄</span>
+    </header>
+
+    <!-- FRASE ROTATIVA -->
+    <section id="quote-banner">
+      <div class="quote-box">
+        <p id="quote-text"></p>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE FOTOS -->
+    <section id="gallery" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Momentos</span>
+        <h2>Nuestra galería</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </section>
+
+    <!-- CARTAS -->
+    <section id="letters" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Palabras</span>
+        <h2>Cartas para ti</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="letters-grid" class="letters-grid"></div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO -->
+    <section id="timeline-section" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Nuestra historia</span>
+        <h2>Línea de tiempo</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section id="counter-section" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Cada segundo cuenta</span>
+        <h2>Llevamos juntos</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="counter-grid reveal">
+        <div class="counter-unit glass"><span id="counter-years" class="value">00</span><span class="label">Años</span></div>
+        <div class="counter-unit glass"><span id="counter-months" class="value">00</span><span class="label">Meses</span></div>
+        <div class="counter-unit glass"><span id="counter-days" class="value">00</span><span class="label">Días</span></div>
+        <div class="counter-unit glass"><span id="counter-hours" class="value">00</span><span class="label">Horas</span></div>
+        <div class="counter-unit glass"><span id="counter-minutes" class="value">00</span><span class="label">Min</span></div>
+        <div class="counter-unit glass"><span id="counter-seconds" class="value">00</span><span class="label">Seg</span></div>
+      </div>
+      <p class="counter-caption reveal">Y sigue sumando...</p>
+    </section>
+
+    <!-- BOTÓN TE AMO -->
+    <section id="love-button-section" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Sin motivo</span>
+        <h2>¿Cuánto te amo?</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="text-align:center;" class="reveal">
+        <button id="love-btn" class="btn">Te amo 💗</button>
+        <p class="hint">Presiona el botón, se pone lindo.</p>
+      </div>
+    </section>
+
+    <!-- RAZONES -->
+    <section id="reasons" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Solo algunas</span>
+        <h2>Razones por las que te amo</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="reasons-grid" class="reasons-grid"></div>
+    </section>
+
+    <!-- LIBRO DE RECUERDOS -->
+    <section id="memory-book" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Escrito por nosotros</span>
+        <h2>Libro de recuerdos</h2>
+        <div class="divider"></div>
+      </div>
+      <form id="memory-form" class="memory-form glass reveal">
+        <input type="text" id="memory-title" placeholder="Título del recuerdo" maxlength="60" required>
+        <textarea id="memory-text" placeholder="Cuéntalo aquí..." maxlength="500" required></textarea>
+        <button type="submit" class="btn">Guardar recuerdo</button>
+      </form>
+      <div id="memory-grid" class="memory-grid"></div>
+    </section>
+
+    <!-- SUEÑOS Y METAS -->
+    <section id="dreams" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Lo que viene</span>
+        <h2>Sueños y metas juntos</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="dreams-grid" class="dreams-grid"></div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p id="footer-frase" class="footer-script reveal"></p>
+      <p id="footer-dedicatoria" class="dedication reveal"></p>
+      <p id="footer-firma" class="footer-signature reveal"></p>
+    </footer>
+
+  </main>
+
+  <!-- REPRODUCTOR DE MÚSICA FLOTANTE -->
+  <div id="music-player" class="glass">
+    <button id="music-toggle" class="music-toggle" aria-label="Reproducir o pausar">▶</button>
+    <div class="music-info">
+      <div id="track-name" class="track-name">Cargando...</div>
+      <div id="track-artist" class="track-artist"></div>
+    </div>
+    <button id="music-next" class="music-next" aria-label="Siguiente canción">›</button>
+    <audio id="bg-audio" preload="none" loop></audio>
+  </div>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="scroll-top-btn" class="glass" aria-label="Volver arriba">↑</button>
+
+  <!-- CAPA PARA LA EXPLOSIÓN DE CORAZONES -->
+  <div id="heart-burst-layer" aria-hidden="true"></div>
+
+  <!-- LIGHTBOX DE LA GALERÍA -->
+  <div id="lightbox">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Cerrar">✕</button>
+    <div>
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- MODAL DE CARTA -->
+  <div id="letter-modal">
+    <div class="letter-paper">
+      <button id="letter-close" class="letter-close" aria-label="Cerrar">✕</button>
+      <h3 id="letter-title"></h3>
+      <span id="letter-date" class="letter-date"></span>
+      <p id="letter-body"></p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
