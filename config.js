@@ -40,11 +40,11 @@ const SITE_CONFIG = {
      degustado bonito en su lugar, así que puedes dejar la
      lista lista y agregar las fotos reales después. */
   fotos: [
-    { src: "assets/fotos/Screenshot_20251130_222258_Instagram.jpg", alt: "Nuestro primer día", caption: "Nuestro primer dia juntos" },
-    { src: "assets/fotos/IMG-20251129-WA0022.jpg", alt: "Un viaje juntos", caption: "Ese tarde inolvidable" },
-    { src: "assets/fotos/IMG-20251230-WA0009.jpg", alt: "Una tarde cualquiera", caption: "Las tardes contigo saben distinto" },
-    { src: "assets/fotos/IMG-20260102-WA0104.jpg", alt: "Riendo juntos", caption: "Tu risa es mi lugar favorito" },
-    { src: "assets/fotos/IMG-20251129-WA0012.jpg", alt: "Nosotros", caption: "Simplemente, nosotros" }, 
+    { src: "Screenshot_20251130_222258_Instagram.jpg", alt: "Nuestro primer día", caption: "Nuestro primer dia juntos" },
+    { src: "IMG-20251129-WA0022.jpg", alt: "Un viaje juntos", caption: "Ese tarde inolvidable" },
+    { src: "IMG-20251230-WA0009.jpg", alt: "Una tarde cualquiera", caption: "Las tardes contigo saben distinto" },
+    { src: "IMG-20260102-WA0104.jpg", alt: "Riendo juntos", caption: "Tu risa es mi lugar favorito" },
+    { src: "IMG-20251129-WA0012.jpg", alt: "Nosotros", caption: "Simplemente, nosotros" }, 
 ],
 
   /* ---------- 4. CARTAS (se muestran como sobres) ----------
