@@ -113,7 +113,7 @@ const SITE_CONFIG = {
      uses). Si el archivo no existe todavía, el reproductor lo
      indica sin romperse. */
   canciones: [
-    { titulo: "Nuestra canción", artista: "true", src: "true love.mp3" },
+    { titulo: "Nuestra canción", artista: "true love", src: "true love.mp3" },
 
   ],
 
